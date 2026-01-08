@@ -1,6 +1,6 @@
 <script type="module" >
-    import * as THREE from '/assets/js/modules/three.module.min.js';
-    import { GLTFLoader } from '/assets/js/modules/GLTFLoader.js';
+    import * as THREE from '{{ site.baseurl }}/assets/js/modules/three.module.min.js';
+    import { GLTFLoader } from '{{ site.baseurl }}/assets/js/modules/GLTFLoader.js';
 
     const container = document.querySelector("#three-container");
     const canvas = document.querySelector("#three-canvas");
@@ -75,7 +75,7 @@
     material.roughness = 0.5;
 
 
-    loader.load( '/assets/models/banner_test.glb', function ( gltf ) {
+    loader.load('{{ site.baseurl }}/assets/models/banner_test.glb', function ( gltf ) {
         let GLBScene = gltf.scene;
         GLBScene.position.x = 2.0;
         

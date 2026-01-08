@@ -1,0 +1,51 @@
+---
+regenerate: true
+permalink: /releases/4.6/index.html
+title: Godot 4.6
+---
+
+{% assign release_version_number = "4.6" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/releases/{{release_version_number}}.css">
+</head>
+<body>
+    <main class="flex flex-col items-center">
+
+        <!-- <div class="hero-bg"></div> -->
+        <section class="container hero">
+            {% include_relative _components/banner.html %}
+            <div class="flex flex-col items-center">
+                <h1 class="title">Beyond stability: a time for polish, <br> quality of life, and performance</h1>
+                <h2 class="subtitle">Look forward to plenty of quality of life improvements hidden within this release. Faster load speeds, reduced stutter, streamlined processes — spotting all the optimizations that have been applied in the background will take some time.
+On top of that, long-awaited comfort features like embedded game windows and interactive in-game editing will feel more in line with other software on the market, making transitioning between them an even smoother experience. The editor overhaul alone takes up a big chunk of this release, after all.</h2>
+                <a href="/download/" class="btn btn-xl mb-l">Download Godot {{release_version_number}}</a>
+            </div>
+        </section>
+
+        <section class="section-header">
+            <h3 class="title">Highlights</h3>
+        </section>
+  
+        <section class="section-body">
+            {% include_relative _components/card.html name="new_theme" size="large" %}
+            <div class="flex gap-m">
+                {% include_relative _components/card.html name="jolt_default" order="reverse" %}
+                {% include_relative _components/card.html name="dock_system" %}
+            </div>
+            {% include_relative _components/card.html name="new_ik" size="large"%}
+            {% include_relative _components/card.html name="new_ssr" size="medium"%}
+        </section>
+
+        <section class="section-header">
+            <h3 class="title">General</h3>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,94 @@
+new_theme:
+  title: Fresh look, fresh focus
+  text: |
+    Since its launch last year, "Godot Minimal Theme" has quickly become a fan-favorite with its clean lines, reduced clutter, and contemporary feel. It was time to integrate it and make it official!
+    You will now be able to choose between the older "Classic" theme and the newer "Modern" theme with Godot 4.6 shipping out with the "Modern" theme by default.
+
+    The new theme which will continue to mature with user feedback, brings you subtle contrast adjustments and improved readability and spacing between UI elements. Many testers have found it helps reduce competition on focus and gives center-stage to the viewport where your game lives. The new grayscale allows you to do color-sensitive work on your game without the blue tint altering your perception.
+    Time for a test drive! Give your eyes some time to get used to the new look before you can start to notice its impact. If you find you still prefer the classic theme, head over to Editor -> Editor Settings -> Interface -> Theme, then change the Style from "Modern" to "Classic" and set the Color Preset to "Godot 3" to get back that signature blue tint, and voilà!
+  read_more: https://github.com/godotengine/godot/pull/111118
+  contributors:
+  - name: Passivestar
+    link: https://github.com/passivestar
+  - name: Michael Alexander
+    link: https://github.com/YeldhamDev
+  media_author:
+    name: MediaAuthor
+    link: https://github.com/passivestar
+  image: placeholder.png
+
+jolt_default:
+  title: We put a bolt on Jolt
+  text: |
+    Remember when we integrated Jolt Physics as an experimental option in 4.4? Since then, many of you have tested it in real projects, and it has proven itself ready for production. So here it comes!
+
+    Jolt is without a doubt a fantastic standalone physics engine. It's fast, stable, and it's no surprise it powers AAA games like Hideo Kojima's Death Stranding 2. We've built a tight, high-quality integration that brings all of Jolt's power directly into the engine. With this release, we're confident enough to remove the experimental label and make Jolt the default physics engine for all new 3D projects.
+
+    <span class="note"> Existing projects aren't affected: your current physics settings stay exactly as they are. Only new projects use Jolt by default. You can manually change the physics engine by going to the project settings. </span>
+  read_more: https://github.com/godotengine/godot/pull/105737
+  contributors:
+  - name: Mikael Hermansso
+    link: https://github.com/mihe
+  - name: Calinou
+    link: https://github.com/Calinou
+  media_author:
+    name: MediaAuthor
+    link: https://github.com/passivestar
+  image: placeholder.png
+
+new_ik:
+  title: Brand new IK framework
+  text: |
+    It's time to pull some bone chains again! The animators and gameplay programmers among you will be thrilled to know inverse kinematics (IK) is back with a bang. You decide where the endpoint goes and your chain of bones follows naturally. Whether you need a character's feet to plant on uneven terrain or a robot arm to reach for objects, the framework to achieve this is right at your fingertips with a full suite of modifiers and constraints.
+
+    We're introducing the core `IKModifier3D` class built on the revamped SkeletonModifier3D. It comes with a family of deterministic solvers including **TwoBoneIK3D**, **SplineIK3D**, and iterative solvers like **FABRIK3D, CCDIK3D, and JacobianIK3D**. You'll also find new constraints to control the twist and angular velocity of joints, which helps prevent excessive and unwanted motion. 
+
+    What's more, you can set the target of animation constraints to 3D nodes to make, for example, the arm of a character extend and snap to a weapon.
+
+    This modular approach of this new framework lets you combine IK with other modifiers and constraints to fine-tune your procedural animations directly in the engine! 
+
+    Documentation is in the works to help you make the best of this framework depending on your use case.
+  read_more: https://github.com/godotengine/godot/pull/110120
+  contributors:
+  - name: Tokage
+    link: https://github.com/TokageItLab
+  media_author:
+    name: MediaAuthor
+    link: https://github.com/passivestar
+  image: placeholder.png
+
+dock_system:
+  title: Dock your heart out
+  text: |
+    Panel shufflers and multi-monitor Feng Shui masters rejoice... 4.6 is your version. You can finally move that bottom panel.
+
+    We've unified the entire docking system in this release. Bottom panels are now regular docks, and you can drag and drop docks and move them around between the sides and the bottom of the editor. Most docks can also be made floating. It's a significant step toward a full workspace system, allowing you to arrange the editor in a way that makes sense for your workflow.
+
+    <span class="note">Note that not all docks support both horizontal and vertical layouts just yet, but they're movable!</span>
+  read_more: https://github.com/godotengine/godot/issues?q=is%3Apr%20state%3Amerged%20108647%20106503%20-106263
+  contributors:
+  - name: Tomasz
+    link: https://github.com/KoBeWi
+  - name: Lodetrick
+    link: https://github.com/lodetrick
+  media_author:
+    name: MediaAuthor
+    link: https://github.com/passivestar
+  image: placeholder.png
+
+new_ssr:
+  title: Major SSR Overhaul
+  text: |
+    If your 3D game environment includes reflective materials like metal, water and glass, things are about to get exciting for you. 
+
+    Screen Space Reflection (SSR) has been completely overhauled in this version, giving you a significant leap in realism, visual stability and performance.
+
+    Not only will your reflective surfaces look more realistic with better handling of roughness, the effect will run faster too! To further optimize, you can choose between full resolution mode for maximum quality, or half resolution mode for higher performance. Even with reflections calculated at half your viewport size, the new SSR allows you to preserve decent quality. Check it out!
+  read_more: https://github.com/godotengine/godot/pull/111210
+  contributors:
+  - name: Skyth
+    link: https://github.com/blueskythlikesclouds
+  media_author:
+    name: MediaAuthor
+    link: https://github.com/passivestar
+  image: placeholder.png

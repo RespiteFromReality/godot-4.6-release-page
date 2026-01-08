@@ -1,0 +1,124 @@
+<script type="module" >
+    import * as THREE from '/assets/js/modules/three.module.min.js';
+    import { GLTFLoader } from '/assets/js/modules/GLTFLoader.js';
+
+    const container = document.querySelector("#three-container");
+    const canvas = document.querySelector("#three-canvas");
+
+    let mouse = {x: 0.0, y: 0.0}
+    let scrollPercent = 0.0;
+    let camera;
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color( 0x151515 );
+    const renderer = new THREE.WebGLRenderer({antialias: true, canvas: canvas,});
+    renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+    renderer.toneMapping = THREE.ReinhardToneMapping;
+    renderer.toneMappingExposure = 1.5;
+
+
+    document.body.addEventListener("pointermove", function(e){
+        mouse.x = e.clientX / container.clientWidth;
+        mouse.y = e.clientY / container.clientHeight;
+    })
+
+    window.addEventListener("scroll", (event) => {
+        scrollPercent = window.scrollY / container.clientHeight;
+    })
+
+    window.addEventListener("resize", (e) => {updateViewportSize()});
+
+    function updateViewportSize(){
+        let w = container.clientWidth * window.devicePixelRatio,
+            h = container.clientHeight * window.devicePixelRatio;
+
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h, false);
+    }
+
+    const ambientLight = new THREE.AmbientLight(0xFFFFFF, 1.6);
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xFFFFFF, 8.5);
+    directionalLight.position.set(-0.5, 1, 1);
+    directionalLight.target.position.set(0.0, 0, 0);
+    scene.add(directionalLight);
+    scene.add(directionalLight.target);
+
+    const backLight = new THREE.DirectionalLight(0xb5e3ff, 4.0);
+    backLight.position.set(0.5, -0.5, -1);
+    backLight.target.position.set(0.0, 0, 0);
+    scene.add(backLight);
+    scene.add(backLight.target);
+
+
+    let mixer;
+    let clock = new THREE.Clock();
+
+    function animate() {
+        const dt = clock.getDelta();
+
+        if (camera){
+            camera.position.x = (mouse.x - 0.5) * 0.15;
+            camera.position.y = -(mouse.y - 0.5) * 0.15 -scrollPercent;
+        }
+
+        if ( mixer ) mixer.update( dt );
+        if (camera) renderer.render( scene, camera );
+    }
+    renderer.setAnimationLoop( animate );
+
+    const loader = new GLTFLoader();
+
+    let sphere = new THREE.MeshStandardMaterial();
+    let material = new THREE.MeshStandardMaterial();
+    material.roughness = 0.5;
+    sphere.roughness = 0.5;
+
+
+    new THREE.TextureLoader().load("/assets/models/godot_plush_albedo.png", function(texture){
+        texture.channel = 0;
+        texture.flipY = false;
+        material.map = texture;
+        material.needsUpdate = true;
+    });
+
+    new THREE.TextureLoader().load("/assets/models/godot_plush_normal.png", function(texture){
+        texture.channel = 0;
+        texture.flipY = false;
+        material.normalMap = texture;
+        material.needsUpdate = true;
+    });
+
+
+    loader.load( '/assets/models/banner_test.glb', function ( gltf ) {
+        let GLBScene = gltf.scene;
+        GLBScene.position.x = 2.0;
+        
+        GLBScene.traverse(function(child) {
+            if(child.name.includes("GodotPlushMesh")){
+                // child.material = material;
+            }
+            if(child.name == "Camera"){
+                camera = child;
+                updateViewportSize();
+            }
+        });
+
+        mixer = new THREE.AnimationMixer( GLBScene );
+        const clip = THREE.AnimationClip.findByName( gltf.animations, 'Scene' );
+        const action = mixer.clipAction( clip );
+        action.play();
+
+        scene.add( GLBScene );
+
+    }, undefined, function ( error ) {
+        console.error( error );
+    } );
+
+</script>
+
+<div id="three-container" style="z-index: -1; position: absolute; width: 100%; height: 100%;">
+    <canvas id="three-canvas" style="position: absolute; width: 100%; height: 100%;"></canvas>
+</div>

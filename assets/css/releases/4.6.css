@@ -270,6 +270,44 @@ body {
   }
 }
 
+
+.page-nav {
+  display: none;
+  position: absolute;
+  height: 100%;
+  left:2em;
+  z-index: 10;
+  ul{
+    background-color: var(--blank-color);
+    position: sticky;
+    top: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0.6em 0.8em;
+    border-radius: 0.4em;
+  }
+  li{
+    margin-bottom: var(--xs);
+    a{
+      color: var(--main-text-color);
+      font-weight: 500;
+      text-decoration: none;
+    }
+    &:not(:first-child) a{
+      opacity: 60%;
+    }
+    &:hover a{
+      opacity: 100%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .page-nav{
+    display: block;
+  }
+}
+
 @media (min-width: 620px) {
   .hero{
     .title{font-size: 2.4em;}

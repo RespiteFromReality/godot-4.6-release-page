@@ -198,13 +198,6 @@ body {
 .hidden{display: none;}
 
 
-.hero-bg{
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--main-bg-color)), url("/storage/releases/4.6/images/thumbnail_4.6.png");
-  background-size: cover;
-  background-position: center;
-  position:absolute; z-index: -1; max-height: 80vh; height:auto; width: 100%; aspect-ratio: 16/9; background-color: var(--blank-color);
-}
-
 .container{
   max-width: 1200px;
   margin: 0em 1em;
@@ -229,7 +222,7 @@ body {
     margin-left: 1.2em;
     margin-right: 1.2em;
     margin-top: var(--xxl);
-    margin-bottom: var(--xl);
+    margin-bottom: var(--xxl);
   }
   .title{
     font-size: 1.4em;

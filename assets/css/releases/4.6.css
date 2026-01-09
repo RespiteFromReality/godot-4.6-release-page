@@ -256,11 +256,18 @@ body {
   align-items: center;
   background-color: var(--card-bg-color);
   margin-bottom: var(--xl);
+  padding: var(--xxl) 0em;
   width: 100%;
   .title{
     position: relative;
     font-size: 1.6em;
-    padding: var(--xl) 0em;
+  }
+  p{
+    opacity: 80%;
+    font-size: 1.0em;
+    margin-top: var(--m);
+    max-width: 65ch;
+    text-align: justify;
   }
   img{
     position: absolute;
@@ -314,6 +321,54 @@ body {
       opacity: 60%;
     }
     &:hover a{
+      opacity: 100%;
+    }
+  }
+}
+
+.quote{
+  display: flex;
+  flex-direction: column;
+  max-width: 70ch;
+  font-size: 1.0em;
+  align-self: center;
+  .text p:first-child:before{
+    font-size: 1.2em;
+    opacity: 60%;
+    content: "“";
+  }
+  .text p:last-child::after{
+    font-size: 1.2em;
+    opacity: 60%;
+    content: "”";
+  }
+  a{
+    color: var(--main-text-color);
+    text-decoration: none;
+  }
+  .text{
+    margin-bottom: 1em;
+  }
+  .author{
+    align-self: end;
+    .role{
+      opacity: 60%;
+    }
+  }
+}
+
+.contributors-wall{
+    width: 100%;
+    margin-bottom: var(--xxl);
+    text-align: center;
+  a {
+    font-size: 1.2em;
+    padding-right: 0.4em;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 80%;
+    color: var(--main-text-color);
+    &:hover{
       opacity: 100%;
     }
   }

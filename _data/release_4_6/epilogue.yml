@@ -1,0 +1,37 @@
+conclusion:
+  title: Team work makes the dream work
+  text: |
+    Thanks to all the contributors who had PRs merged into this release.
+    Special thanks goes out to all the engine teams that collaborated on this release, especially since commits to other related repositories do not show up in this graphic.
+
+end_message:
+  text: |
+    Yet another gargantuan release, totalling nearly 2,500 commits (excluding merge commits)!
+    Our focus on integrating accessibility options really shines through this release, with the express intent of creating an environment and experience that anyone can wield to the fullest. We'd like to thank the team behind the AccessKit project, and everyone else who helped integrate their systems and others like it.
+    More than 400 contributors were involved in this new feature release, and we want to thank them all for their amazing contributions, as well as all users who sponsor the Development Fund, reported bugs, opened proposals, or supported each other on our community platforms.
+  author:
+    name: Thaddeus Crews
+    role: Release Manager
+    link: https://github.com/Repiteo
+
+contributors:
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username
+  - name: Username
+    link: https://github.com/username

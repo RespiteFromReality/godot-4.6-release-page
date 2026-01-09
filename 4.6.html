@@ -49,6 +49,7 @@ title: Godot 4.6
                 <li><a href="#section-editor">Editor</a></li>
                 <li><a href="#section-system">System</a></li>
                 <li><a href="#section-xr">XR</a></li>
+                <li><a href="#section-epilogue">Epilogue</a></li>
             </ul>
         </div>
 
@@ -62,9 +63,61 @@ title: Godot 4.6
             {% include_relative _components/card.html name="new_ssr" size="medium"%}
         </section>
 
-        <section class="section-header">
+        <section id="section-general" class="section-header">
             <h3 class="title">General</h3>
         </section>
+
+        <section id="section-2d" class="section-header">
+            <h3 class="title">2D</h3>
+        </section>
+
+        <section id="section-3d" class="section-header">
+            <h3 class="title">3D</h3>
+        </section>
+
+        <section id="section-editor" class="section-header">
+            <h3 class="title">Editor</h3>
+        </section>
+
+
+        <section id="section-system" class="section-header">
+            <h3 class="title">System</h3>
+        </section>
+
+
+        <section id="section-editor" class="section-header">
+            <h3 class="title">XR</h3>
+        </section>
+
+        <section id="section-epilogue" class="section-header">
+            <h3 class="title">{{ site.data.release_4_6.epilogue.conclusion.title}}</h3>
+            {{ site.data.release_4_6.epilogue.conclusion.text | markdownify}}
+        </section>
+
+        <section class="section-body">
+            <div class="contributors-wall">
+                {% for contributor in site.data.release_4_6.epilogue.contributors %}
+                    <a href={{ contributor.link }}>{{ contributor.name }}</a>
+                {% endfor %}
+            </div>
+
+
+            {% assign end_message = site.data.release_4_6.epilogue.end_message %}
+            <div class="quote">
+                <div class="text">
+                    {{ end_message.text | markdownify}}
+                </div>
+                <div class="author">
+                    <a href="{{ end_message.author.link }}"">
+                        {{ end_message.author.name }}
+                    </a>
+                    <span class="role">
+                        {{ end_message.author.role }}
+                    </span>
+                </div>
+            </div>
+        <section>
+
     </main>
     <script src="{{ site.baseurl }}/assets/js/releases/banner.js" type="module"></script>
     <script src="{{ site.baseurl }}/assets/js/releases/video_player.js" defer></script>

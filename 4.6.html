@@ -63,19 +63,23 @@ title: Godot 4.6
         <section id="section-general" class="section-header">
             <h3 class="title">General</h3>
         </section>
-
+        
         <section class="section-body">
-            {% include_relative _components/card.html name="unique_node_ids" size="medium"%}
-            <div class="sub-grid">
-                {% include_relative _components/card.html name="libgodot" order="reverse"%}
-                {% include_relative _components/card.html name="private_signals"%}
-            </div>
 
-            <h4 style="margin-top: 1.6em; margin-bottom: 1em; font-size: 1.2em; font-weight: 600; opacity: 60%; align-self: center;">2D</h4>
+            <h4 class="sub-section">Core</h4>
+            
+            {% include_relative _components/card.html name="unique_node_ids" size="large"%}
+            {% include_relative _components/card.html name="libgodot" size="medium"%}
+            
+            <h4 class="sub-section">Documentation</h4>
+
+            {% include_relative _components/card.html name="private_signals" size="medium"%}
+
+            <h4 class="sub-section">2D</h4>
             
             {% include_relative _components/card.html name="rotate_2d_tile" size="medium"%}
 
-            <h4 style="margin-top: 1.6em; margin-bottom: 1em; font-size: 1.2em; font-weight: 600; opacity: 60%; align-self: center;">3D</h4>
+            <h4 class="sub-section">3D</h4>
 
             {% include_relative _components/card.html name="rotate_3d_tile" size="medium"%}
             <div class="sub-grid">
@@ -83,7 +87,7 @@ title: Godot 4.6
                 {% include_relative _components/card.html name="rotation_gizmo"%}
             </div>
 
-            <h4 style="margin-top: 1.6em; margin-bottom: 1em; font-size: 1.2em; font-weight: 600; opacity: 60%; align-self: center;">GUI</h4>
+            <h4 class="sub-section">GUI</h4>
 
             {% include_relative _components/card.html name="separated_mouse_and_keyboard_focus" size="medium"%}
             <div class="sub-grid">
@@ -91,7 +95,7 @@ title: Godot 4.6
                 {% include_relative _components/card.html name="ui_margin"%}
             </div>
 
-            <h4 style="margin-top: 1.6em; margin-bottom: 1em; font-size: 1.2em; font-weight: 600; opacity: 60%; align-self: center;">Editor</h4>
+            <h4 class="sub-section">Editor</h4>
 
             {% include_relative _components/card.html name="editor_enhancements" size="large"%}
 
@@ -108,12 +112,102 @@ title: Godot 4.6
             <h3 class="title">System</h3>
         </section>
 
+        <section class="section-body">
+
+            <h4 class="sub-section">Animation</h4>
+
+            {% include_relative _components/card.html name="animation_editor_goodies" size="large"%}
+
+            <h4 class="sub-section">Export</h4>
+
+            {% include_relative _components/card.html name="patch_pcks" size="medium"%}
+
+            <h4 class="sub-section">Input</h4>
+            
+            <div class="sub-grid">
+                {% include_relative _components/card.html name="custom_keyboard_shortcuts" order="reverse"%}
+                {% include_relative _components/card.html name="controllers_led"%}
+            </div>
+            
+            <h4 class="sub-section">Import</h4>
+
+            <div class="sub-grid">
+                {% include_relative _components/card.html name="faster_textures" order="reverse"%}
+                {% include_relative _components/card.html name="improved_lod"%}
+            </div>
+
+            <h4 class="sub-section">Rendering</h4>
+
+            {% include_relative _components/card.html name="glow_blending" size="medium"%}
+            <div class="sub-grid">
+                {% include_relative _components/card.html name="agx_parameters" order="reverse"%}
+                {% include_relative _components/card.html name="radiance_reflection_probes_improvement"%}
+            </div>
+
+            <h4 class="sub-section">Internationalization</h4>
+
+            {% include_relative _components/card.html name="csv_translation_improvement" size="medium" order="reverse"%}
+            {% include_relative _components/card.html name="csharp_translation_parser_support" size="medium"%}
+
+
+            <h4 class="sub-section">XR</h4>
+            
+            {% include_relative _components/card.html name="openxr_spatial_entities" size="medium"%}
+            <div class="sub-grid">
+                {% include_relative _components/card.html name="openxr_support" order="reverse"%}
+                {% include_relative _components/card.html name="xr_editor_android"%}
+            </div>
+
+        </section>
+
         <section id="section-platforms" class="section-header">
             <h3 class="title">Platforms</h3>
         </section>
 
+        <section class="section-body">
+
+            <h4 class="sub-section">Android</h4>
+
+            {% include_relative _components/card.html name="scrcpy_support" size="medium"%}
+
+            <div class="sub-grid">
+                {% include_relative _components/card.html name="android_gradle" order="reverse"%}
+                {% include_relative _components/card.html name="storage_access_framework"%}
+            </div>
+
+            <h4 class="sub-section">Windows</h4>
+
+            {% include_relative _components/card.html name="render_parity" size="medium"%}
+
+            <h4 class="sub-section">Physics</h4>
+
+            {% include_relative _components/card.html name="mesh_to_collision_shape" size="medium"%}
+
+        </section>
+
         <section id="section-scripting" class="section-header">
             <h3 class="title">Scripting</h3>
+        </section>
+
+        <section class="section-body">
+
+            <h4 class="sub-section">GDExtention</h4>
+
+            <div class="sub-grid">
+                {% include_relative _components/card.html name="parameters_and_values_as_required" order="reverse"%}
+                {% include_relative _components/card.html name="json_gdextension"%}
+            </div>
+
+            <h4 class="sub-section">GDscript</h4>
+
+            {% include_relative _components/card.html name="step_out_button" size="medium"%}
+            <div class="sub-grid">
+                {% include_relative _components/card.html name="tracy_profiler" order="reverse"%}
+                {% include_relative _components/card.html name="bbcode_to_markdown"%}
+            </div>
+            {% include_relative _components/card.html name="string_placeholder_highlighting" size="medium"%}
+
+
         </section>
 
         <section id="section-epilogue" class="section-header">

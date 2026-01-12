@@ -406,11 +406,11 @@ patch_pcks:
   contributors:
     - name: Mikael Hermansson
       link: https://github.com/mihe
-  media: placeholder.webm
+  media: placeholder.png
 
 # Input
 
-Patch_pcks:
+custom_keyboard_shortcuts:
   title: Poweruse that editor
   subtitle: Add custom keyboard shortcuts through EditorSettings
   text: |
@@ -489,7 +489,6 @@ glow_blending:
     - name: Hugo Locurcio
       link: https://github.com/Calinou
   media: placeholder.webm
-
 
 radiance_reflection_probes_improvement:
   title: Lighter Localized Reflections
@@ -642,7 +641,7 @@ mesh_to_collision_shape:
 
 # Scripting
 
-# GDExtention
+## GDExtention
 
 parameters_and_values_as_required:
   title: It's required if you say it is...
@@ -658,7 +657,6 @@ parameters_and_values_as_required:
       link: https://github.com/Repiteo
   media: placeholder.webm
 
-
 json_gdextension:
   title: JSON's here!
   subtitle: JSON-based GDExtension interface
@@ -672,6 +670,8 @@ json_gdextension:
     - name: Aaron Franke
       link: https://github.com/aaronfranke
   media: placeholder.webm
+
+## GDscript
 
 step_out_button:
   title: Get outa that function already

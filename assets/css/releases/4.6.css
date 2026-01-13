@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./gdquest.css";
 
 :root {
   --main-text-color: #FBFBFF;

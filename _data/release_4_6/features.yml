@@ -282,7 +282,7 @@ ui_margin:
   contributors:
     - name: Malcolm Anderson
       link: https://github.com/Meorge
-  media: placeholder.webm
+  media: control_margin.webp
 
 # Editor
 
@@ -712,10 +712,10 @@ string_placeholder_highlighting:
   contributors:
     - name: Cyril Bissey
       link: https://github.com/Cykyrios
-  media: placeholder.webm
+  media: string_placeholder_highlighting.webp
 
 bbcode_to_markdown:
-  title: It's written in **BOLD**
+  title: It's written in **BOLD**
   subtitle: 'GDScript LSP: Improved BBCode to Markdown Conversion'
   text: |
     Now when your comments include formatting like bold, code blocks, and structured text, they render more clearly in editors and IDEs that support Markdown. Godot 4.6 improves the GDScript language server so docstrings that use BBCode now convert to Markdown more faithfully. You get better readability in documentation popups, tooltips, and editor previews, making it easier to write and maintain rich in‑code docs.

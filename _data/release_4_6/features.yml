@@ -317,7 +317,11 @@ resource_preview:
   contributors:
     - name: Malcolm Anderson
       link: https://github.com/Meorge
-  media: placeholder.webm
+  media_author:
+    name: Malcolm Anderson
+    link: https://github.com/Meorge
+  media: resource_preview.webm
+  poster: resource_preview.webp
 
 error_click:
   title: Error Error on the wall...
@@ -346,7 +350,7 @@ objectdb_snapshots:
   contributors:
     - name: Aleksander Lytinsky
       link: https://github.com/AleksLitynski
-  media: placeholder.webm
+  media: objectdb_snapshots.webp
 
 editor_enhancements:
   title: Editor Loot Drop!

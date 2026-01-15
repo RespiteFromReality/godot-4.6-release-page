@@ -392,15 +392,20 @@ body {
     margin-bottom: var(--xxl);
     text-align: center;
   a {
-    font-size: 1.2em;
-    padding-right: 0.4em;
+    padding: 0 0.2em;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     opacity: 80%;
     color: var(--main-text-color);
+    text-transform: capitalize;
     &:hover{
       opacity: 100%;
     }
+    &.scale-1{font-size: 0.8em;}
+    &.scale-2{font-size: 1.0em;}
+    &.scale-3{font-size: 1.2em;}
+    &.scale-4{font-size: 1.4em;}
+    &.scale-5{font-size: 1.6em;}
   }
 }
 

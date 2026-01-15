@@ -98,10 +98,8 @@ new_ssr:
   contributors:
   - name: Skyth
     link: https://github.com/blueskythlikesclouds
-  media_author:
-    name: MediaAuthor
-    link: https://github.com/
-  media: placeholder.png
+  poster: new_ssr.webp
+  media: new_ssr.webm
 
 highlights_conclusion:
   title: Ok, so what changes for you?
@@ -338,7 +336,11 @@ error_click:
       link: https://github.com/KoBeWi
     - name: Mikael Hermansson
       link: https://github.com/mihe
-  media: placeholder.webm
+  media_author:
+    name: Tomasz Chabora
+    link: https://github.com/KoBeWi
+  media: error_click.webm
+  poster: error_click.webp
 
 objectdb_snapshots:
   title: Spot the difference

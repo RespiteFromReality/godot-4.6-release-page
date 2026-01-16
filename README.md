@@ -8,7 +8,8 @@ The current build is [available here](https://gtibo.github.io/godot-4.6-release-
 
 - [ ] Better banner
 - [ ] Improve the navigation bar (show current section and subsections)
-- [ ] Add contributors' names to the contributors' wall
+- [x] Add contributors' names to the contributors' wall
+- [x] Add image comparison component
 - [ ] Godot mascot on each section
 - [ ] Use the new theme for all media
 

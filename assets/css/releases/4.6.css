@@ -392,12 +392,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-body{
   max-width: min(100%, 1200px);
-  margin: 0em 1.5em;
-  width: full;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--l);
-  margin-bottom: 4em;
   .sub-grid{
     display: flex;
     flex-direction: column;
@@ -555,7 +553,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4em;
   }
   .section-body{
-    margin: 0em 1em;
+    margin: 0em 1.5em;
+    margin-bottom: 4em;
     .sub-grid{
       flex-direction: row;
     }

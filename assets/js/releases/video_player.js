@@ -15,7 +15,7 @@
         entries.forEach((entry)=>{
             let player = entry.target;
             if(!entry.isIntersecting && !player.paused) player.pause();
-            
+            if(entry.isIntersecting && player.paused) player.play(); 
         });
     };
 

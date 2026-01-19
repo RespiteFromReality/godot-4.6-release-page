@@ -354,21 +354,21 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin-left: 1.2em;
     margin-right: 1.2em;
+    width: 100%;
+    max-width: 1400px;
   }
   h1{
-    font-size: 1.8rem;
-    margin-bottom: var(--s);
-    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: var(--xs);
+    font-weight: 400;
+    opacity: 60%;
   }
   h2{
     font-size: 1.4em;
     margin-bottom: var(--l);
-    font-weight: 800;
-    text-align: center;
-    color: var(--color-godot-but-desaturated);
   }
 }
 
@@ -571,9 +571,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.0em;
   }
   .hero{
-    h1{font-size: 5rem; text-transform: uppercase;}
-    h2{font-size: 2.6em;}
-    .btn-xl{font-size: 1.7em;}
+    h1{font-size: 2.0rem;}
+    h2{font-size: 2.8em;}
   }
   .preamble{
     font-size: 1.4em;

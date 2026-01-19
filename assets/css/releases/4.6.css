@@ -35,7 +35,6 @@
 html {
     height: 100%;
     font-weight: 400;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -444,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.page-nav {
+#toc-nav {
   display: none;
   position: absolute;
   height: 100%;
@@ -459,7 +458,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2em;
     display: grid;
     gap: 0.7rem;
-    scroll-target-group: auto;
   }
   li{
     margin-bottom: 0;
@@ -470,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 60%;
     position: relative;
     display: block;
-    transition: all 0.2s ease-out;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
     &::before{
       --size: 0.5rem;
       content: " ";
@@ -491,10 +489,7 @@ h1, h2, h3, h4, h5, h6 {
       transition: all 0.3s ease-in;
     }
   }
-}
-
-@supports(scroll-target-group: auto) {
-  .page-nav a:target-current{
+  a.current{
     opacity: 100%;
     transform: translateX(0.4em);
     &:before{
@@ -503,6 +498,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
+
 
 .quote{
   display: flex;
@@ -559,7 +555,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1400px) {
-  .page-nav{
+  #toc-nav{
     display: block;
   }
 }

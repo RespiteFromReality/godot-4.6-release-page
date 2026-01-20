@@ -141,8 +141,13 @@ body {
     width: 100%;
     margin-bottom: var(--xxl);
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     a {
-      padding: 0 0.2em;
+      padding: 0.2em 0.2em;
+      margin: 0.1em 0.3em;
+      align-self: center;
       text-decoration: none;
       font-weight: 400;
       opacity: 80%;
@@ -150,11 +155,11 @@ body {
       &:hover{
         opacity: 100%;
       }
-      &.scale-1{font-size: 0.8em;}
+      &.scale-1{font-size: 0.9em;}
       &.scale-2{font-size: 1.0em;}
-      &.scale-3{font-size: 1.2em;}
-      &.scale-4{font-size: 1.4em;}
-      &.scale-5{font-size: 1.6em;}
+      &.scale-3{font-size: 1.4em;}
+      &.scale-4{font-size: 1.6em;}
+      &.scale-5{font-size: 1.8em;}
     }
 }
 

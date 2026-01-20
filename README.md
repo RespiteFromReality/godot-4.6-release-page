@@ -6,7 +6,7 @@ The current build is [available here](https://gtibo.github.io/godot-4.6-release-
 
 ### Todo
 
-- [ ] Better banner
+- [x] Better banner
 - [x] Improve the navigation bar (show current section and subsections)
 - [x] Standardize author names on cards
 - [x] Autoplay videos with Intersection Observer + better UX

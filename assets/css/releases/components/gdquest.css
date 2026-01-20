@@ -44,10 +44,3 @@
     }
   }
 }
-@media (min-width: 620px) {
-  .gdquest-card{
-    a{
-        font-size: 1.6rem;
-    }
-  }
-}

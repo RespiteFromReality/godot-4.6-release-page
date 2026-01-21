@@ -50,19 +50,37 @@ body {
 }
 
 .btn{
-  background-color: var(--accent-color);
+  position: relative;
+  transition: all 0.2s ease-in-out;
   color: var(--main-text-color);
   font-weight: 600;
   border-radius: 10.0em;
   text-decoration: none;
   display: inline-block;
-  transition: background-color 0.2s ease-in-out;
-
   padding: 0.8em 1.0em;
   font-size: 1.2em;
-
+  overflow: hidden;
+  &::after{
+    transition: all 0.8s ease-out;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(15deg);
+    background: linear-gradient(0deg, black 20%, #185FE7 80%);
+  }
+  &:hover::after{
+    transform: translate(-50%, -50%) rotate(-15deg);
+    opacity: 100%;
+  }
+  
   &:hover{
-    background-color: var(--accent-color-hover);
+    transform: scale(1.05);
   }
 }
 

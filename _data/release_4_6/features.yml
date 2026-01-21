@@ -602,7 +602,7 @@ glow_blending:
     after_text: After
 
 radiance_reflection_probes_improvement:
-  title: Lighter localized reflections
+  title: Lighten the load of reflections
   subtitle: Octahedral maps for reflection and radiance probes
   text: |
     Reflection and radiance probes now use octahedral maps. This makes them cheaper to compute for your GPU and lighter on memory.

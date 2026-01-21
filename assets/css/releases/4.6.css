@@ -169,14 +169,15 @@ body {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 620px) {
   #toc-nav{
-    display: block;
+    left: 2em;
+    transform: none;
   }
 }
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
   .section-body{
     padding: 0 1em;
     max-width: min(100%, 1200px);

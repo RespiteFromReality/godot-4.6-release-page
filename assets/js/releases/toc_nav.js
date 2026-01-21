@@ -1,8 +1,9 @@
 (()=>{
     let tocNav = document.querySelector("#toc-nav");
     let sectionElements = document.querySelectorAll("section.section-header");
-    let navElement = undefined;
-
+    let navElement = tocNav.querySelector(`a[href='#${sectionElements[0].id}']`);
+    navElement.classList.add("current");
+    
     let setCurrentSection = function(sectionElement){
         if(!sectionElement) return;
 

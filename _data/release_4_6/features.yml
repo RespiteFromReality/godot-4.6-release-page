@@ -584,7 +584,7 @@ glow_blending:
   title: Glow in the dark
   subtitle: Improved glow blending defaults
   text: |
-    Glow is now blended **before tonemapping**, with `Screen` as the new default mode. This corrects the order and improves visual results with at least similar or outright better performance. The tweak standardizes behavior across renderers and takes one more step towards improving HDR support.
+    Glow is now blended **before tonemapping**, with Screen as the new default mode. This corrects the order and improves visual results with at least similar or outright better performance. The tweak standardizes behavior across renderers and takes one more step towards improving HDR support.
 
   read_more: https://github.com/godotengine/godot/pull/110671
   contributors:
@@ -593,13 +593,9 @@ glow_blending:
     - name: Hugo Locurcio
       link: https://github.com/Calinou
   media_author:
-    name: Allen Pestaluky
-    link: https://github.com/allenwp
-  compare:
-    before_image: glow_before.webp
-    after_image: glow_after.webp
-    before_text: Before
-    after_text: After
+    name: Amazon Lumberyard
+    link: http://developer.nvidia.com/orca/amazon-lumberyard-bistro
+  media: glow_blending.webp
 
 radiance_reflection_probes_improvement:
   title: Lighten the load of reflections

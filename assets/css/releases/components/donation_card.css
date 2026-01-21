@@ -1,14 +1,23 @@
 #donation-card{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2em;
     margin-top: 1em;
     margin-bottom: 3em;
-    justify-content: space-between;
     padding: 1em 2em;
     font-size: 1.6em;
     font-weight: 600;
+    text-align: center;
     .color{
+        text-wrap-mode: nowrap;
         color: #ff428e;
+    }
+}
+
+@media (min-width: 1200px) {
+    #donation-card{
+        flex-direction: row;
     }
 }

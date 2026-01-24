@@ -647,6 +647,23 @@ mobile_3d_upgrade:
     after_image: hdr2d_debanding_4.6.webp
     before_text: Before
     after_text: After
+    
+mobile_gpu_crash_fixes:
+  title: Mobile mended
+  subtitle: Vulkan Mobile crash fixes for Mali and Adreno GPUs
+  text: |
+    Godot is a general-purpose engine used by a wide variety of people, on a wide variety of devices, with a wide variety of graphics drivers, and not all of them work gracefully. Ensuring stability across the board is a constant effort, and this release makes big strides.
+
+    Thanks to developers of games like Rift Riff and Kamaeru sharing detailed crash logs from Google Play, we tracked down and fixed a series of crashes affecting devices with certain Mali and Adreno mobile GPUs. If you've been seeing unexplained crashes on Android with the Mobile renderer, this release should bring relief to you and your players.
+
+  read_more: https://github.com/godotengine/godot/pulls?q=is%3Apr+114476+or+114313+
+  contributors:
+    - name: Skyth
+      link: https://github.com/blueskythlikesclouds
+    - name: Adriaan de Jongh
+      link: https://github.com/AdriaandeJongh
+    - name: and more
+      link: https://bsky.app/profile/adriaan.games/post/3mcffssfxrd2l
 
 # Internationalization
 

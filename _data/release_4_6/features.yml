@@ -752,7 +752,10 @@ storage_access_framework:
   contributors:
     - name: Anish Kumar
       link: https://github.com/syntaxerror247
-  media: placeholder.webm
+  media: android_saf.webp
+  media_author:
+    name: Anish Kumar
+    link: github.com/syntaxerror247
 
 scrcpy_support:
   title: Coming to a big screen near you

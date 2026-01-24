@@ -16,7 +16,7 @@ The current build is [available here](https://gtibo.github.io/godot-4.6-release-
 - [ ] Add Share image
 - [ ] Update the quote at the bottom of the page
 - [x] Page credits section
-- [ ] Fix 3D banner mouse event on mobile
+- [x] Fix 3D banner mouse event on mobile
 - [ ] Godot mascot on each section
 - [ ] Use the new theme for all media
 

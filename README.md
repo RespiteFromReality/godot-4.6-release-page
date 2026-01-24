@@ -13,6 +13,10 @@ The current build is [available here](https://gtibo.github.io/godot-4.6-release-
 - [x] Don't capitalize usernames in the list of contributors at the bottom
 - [x] Add contributors' names to the contributors' wall
 - [x] Add image comparison component
+- [ ] Add Share image
+- [ ] Update the quote at the bottom of the page
+- [ ] Page credits section
+- [ ] Fix 3D banner mouse event on mobile
 - [ ] Godot mascot on each section
 - [ ] Use the new theme for all media
 
